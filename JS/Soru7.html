@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="">Birinci Sayı :</label>
+        <input type="number" id="sayi1">
+        
+    </div>
+
+    <div>
+        <label for="">İkinci Sayı :</label>
+        <input type="number" id="sayi2">
+       
+    </div>
+
+    <div>
+        <button onclick=KareHesapla()>Kare  Hesapla</button>
+     
+      
+    </div>
+    <div>
+        <label for="">SONUC</label> <span id='sonuc'> </span>
+       
+    </div>
+
+
+
+</body>
+
+</html>
+
+<script>
+    var txtSayi1 = document.getElementById("sayi1");
+    var txtSayi2 = document.getElementById("sayi2");
+
+    function KareHesapla(sayi1, sayi2) {
+        var sayi1 = Number(txtSayi1.value);
+        var sayi2 = Number(txtSayi2.value);
+        var sonuc = (sayi1 * sayi1) + (sayi2 * sayi2)
+
+        document.getElementById('sonuc').innerHTML = sonuc;
+        console.log(sonuc);
+
+    }
+
+
+
+
+
+</script>

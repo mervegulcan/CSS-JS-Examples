@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+<script>
+
+    var sayilar = [1, 7, 8, 4, 2, 6, 47, 4, 12, 9, 43]
+    var toplamFor = 0;
+    var toplamForeach = 0;
+    var toplamMap = 0;
+    //For
+    for (var i = 0; i < sayilar.length; i++) {
+        toplamFor += Number(sayilar[i])
+    }
+    console.log(toplamFor);
+
+    //Foreach
+    sayilar.forEach(function(element){
+        toplamForeach+=Number(element);
+
+    });
+    console.log(toplamForeach);
+
+    //Map
+    sayilar.map(function(element){
+      toplamMap +=Number(element);
+    });
+    console.log(toplamMap);
+
+
+
+
+</script>
